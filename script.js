@@ -1,4 +1,24 @@
 // ===================================
+// NAVBAR SCROLL EFFECT
+// ===================================
+
+const navbar = document.querySelector('.navbar');
+const heroSection = document.querySelector('.hero');
+
+window.addEventListener('scroll', function() {
+    if (heroSection) {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        const scrollPosition = window.scrollY;
+        
+        if (scrollPosition > heroBottom) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }
+});
+
+// ===================================
 // THEME TOGGLE
 // ===================================
 
@@ -149,20 +169,19 @@ document.querySelectorAll('.code-block').forEach(block => {
 // NAVBAR SCROLL EFFECT
 // ===================================
 
-let lastScrollTop = 0;
-const navbar = document.querySelector('.navbar');
+/* let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
-    if (currentScroll > 50) {
+    if (currentScroll === 0) {
         navbar.style.borderBottomColor = 'rgba(255, 255, 255, 0.1)';
     } else {
         navbar.style.borderBottomColor = '#222222';
     }
     
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+}); */
 
 // ===================================
 // BUTTON INTERACTIONS
