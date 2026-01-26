@@ -9,8 +9,8 @@
     --color-gray-300: #d0d0d0;
     --color-gray-500: #808080;
     --color-gray-700: #3a3a3a;
-    --color-accent: #3861fb;
-    --color-accent-dark: #254bc4;
+    --color-accent: #0ea5e9;
+    --color-accent-dark: #0284c7;
     --color-border: #222222;
     
     /* Theme variables */
@@ -114,6 +114,7 @@ body.light-mode .navbar.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--spacing-sm);
 }
 
 .logo-link {
@@ -126,23 +127,40 @@ body.light-mode .navbar.scrolled {
     opacity: 0.8;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
 .logo {
+    height: 60px;
+    width: auto;
+    margin: -5;
+    padding: -5;
+}
+
+.logo-text {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
-}
-
-.logo h1 {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
+    gap: 0;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
     letter-spacing: -0.5px;
+    line-height: 1.2;
+    width: 45px;
 }
 
-.logo .tagline {
-    font-size: var(--font-size-sm);
-    color: var(--color-gray-500);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+body.light-mode .logo-text {
+    color: #000000;
+}
+
+/* body.light-mode .logo {
+    filter: brightness(0.6) saturate(0.8);
+} */
+
+body.dark-mode .logo {
+    filter: brightness(1.2) saturate(1.2);
 }
 
 .nav-links {
@@ -298,7 +316,7 @@ body.light-mode .icon-moon {
     position: absolute;
     z-index: 1;
     left: -30%;
-    top: -40%;
+    top: -30%;
     transform: rotate(-9deg);
     transform-origin: left top;
 }
@@ -591,6 +609,7 @@ body:not(.light-mode) .code-block {
     color: inherit;
     transition: all var(--transition-smooth);
     position: relative;
+    border-radius: 8px;
 }
 
 .doc-card:hover {
@@ -602,6 +621,17 @@ body:not(.light-mode) .code-block {
 .doc-icon {
     font-size: 2rem;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+}
+
+.doc-icon-img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
 }
 
 .doc-card h3 {
@@ -739,7 +769,7 @@ body:not(.light-mode) .code-block {
     }
 
     .nav-content {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .nav-links {
