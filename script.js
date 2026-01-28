@@ -23,7 +23,6 @@ window.addEventListener('scroll', function() {
 // ===================================
 
 const themeToggle = document.getElementById('theme-toggle');
-const themeToggleMobile = document.getElementById('theme-toggle-mobile');
 const htmlElement = document.documentElement;
 const body = document.body;
 
@@ -33,43 +32,38 @@ if (currentTheme === 'light-mode') {
     body.classList.add('light-mode');
 }
 
-// Theme toggle button click handler for desktop
-themeToggle.addEventListener('click', function() {
-    body.classList.toggle('light-mode');
-    
-    // Save preference to localStorage
-    const theme = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
-    localStorage.setItem('theme-mode', theme);
-});
-
-// Theme toggle button click handler for mobile
-themeToggleMobile.addEventListener('click', function() {
-    body.classList.toggle('light-mode');
-    
-    // Save preference to localStorage
-    const theme = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
-    localStorage.setItem('theme-mode', theme);
-});
+// Theme toggle button click handler
+if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+        body.classList.toggle('light-mode');
+        
+        // Save preference to localStorage
+        const theme = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+        localStorage.setItem('theme-mode', theme);
+    });
+}
 
 // ===================================
 // HAMBURGER MENU
 // ===================================
 
 const hamburgerMenu = document.getElementById('hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
+const navCenter = document.querySelector('.nav-center');
 
-hamburgerMenu.addEventListener('click', function() {
-    hamburgerMenu.classList.toggle('active');
-    navLinks.classList.toggle('active');
-});
-
-// Close menu when a link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', function() {
-        hamburgerMenu.classList.remove('active');
-        navLinks.classList.remove('active');
+if (hamburgerMenu && navCenter) {
+    hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.classList.toggle('active');
+        navCenter.classList.toggle('active');
     });
-});
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            hamburgerMenu.classList.remove('active');
+            navCenter.classList.remove('active');
+        });
+    });
+}
 
 // ===================================
 // SMOOTH SCROLLING & NAVIGATION

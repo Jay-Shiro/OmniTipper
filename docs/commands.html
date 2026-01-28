@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - OmniTipper Docs</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="../index.html" class="logo-link">
+                        <div class="logo-container">
+                            <img src="../assets/tipper_bot_logo.svg" alt="OmniTipper" class="logo">
+                            <div class="logo-text">
+                                <span>Omni.</span>
+                                <span>Tipper</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="index.html">Docs</a></li>
+                        <li><a href="../features.html">Features</a></li>
+                        <li><a href="../use-cases.html">Use Cases</a></li>
+                        <li><a href="../commands.html">Commands</a></li>
+                        <li><a href="../support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="icon-moon"><img src="../assets/Moon.svg" alt="Dark Mode"></span>
+                        <span class="icon-sun"><img src="../assets/Sun.svg" alt="Light Mode"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero block">
+        <div class="container">
+            <h1>Commands Reference</h1>
+            <p class="section-subtitle">Full documentation of all OmniTipper commands.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card" style="max-width: 100%; grid-column: 1 / -1;">
+                <h2 style="margin-top: 0;">User Commands</h2>
+                <p>These commands are available to all users in your server:</p>
+                <ul style="margin: 1rem 0 0 0;">
+                    <li><code>!help</code> - Show help message</li>
+                    <li><code>!balances</code> - View your token balances</li>
+                    <li><code>!deposit &lt;token&gt;</code> - Get your deposit address</li>
+                    <li><code>!tip @user &lt;amount&gt; &lt;token&gt;</code> - Tip a user</li>
+                    <li><code>!tip @user $&lt;amount&gt; &lt;token&gt;</code> - Tip in USD equivalent</li>
+                    <li><code>!withdraw &lt;token&gt; &lt;address_or_ens&gt; &lt;amount&gt;</code> - Withdraw to your wallet</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" style="max-width: 100%; grid-column: 1 / -1;">
+                <h2 style="margin-top: 0;">Admin Commands</h2>
+                <p>These commands are available to server administrators:</p>
+                <ul style="margin: 1rem 0 0 0;">
+                    <li><code>!admin addcoin &lt;erc20_contract&gt;</code> - Add a new token</li>
+                    <li><code>!admin delcoin &lt;symbol&gt;</code> - Remove a token</li>
+                    <li><code>!admin accounting</code> - View accounting info</li>
+                    <li><code>!admin userstats</code> - View user statistics</li>
+                    <li><code>!admin failedwithdrawals</code> - Check failed withdrawals</li>
+                    <li><code>!admin refund &lt;withdrawal_id&gt;</code> - Refund a withdrawal</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>OmniTipper</h4>
+                <p>Discord tipping on Base: instant off-chain tips, on-chain deposits + withdrawals when you're ready to move funds.</p>
+                <p class="small">Fees: tips are free. Deposits and withdrawals include a 0.1% service fee.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Docs</h4>
+                <ul>
+                    <li><a href="getting-started.html">Getting Started</a></li>
+                    <li><a href="commands.html">Commands</a></li>
+                    <li><a href="self-host.html">Self-Host</a></li>
+                    <li><a href="architecture.html">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../features.html">Features</a></li>
+                    <li><a href="../support.html">Support</a></li>
+                    <li><a href="https://omnitipper-7e2078.gitlab.io/README.html" target="_blank" rel="noreferrer">Source</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-lg); width: 100%;">
+                <p>&copy; 2026 OmniTipper. Base-native Discord tipping.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

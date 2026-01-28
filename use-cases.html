@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases - OmniTipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-container">
+                            <img src="assets/tipper_bot_logo.svg" alt="OmniTipper" class="logo">
+                            <div class="logo-text">
+                                <span>Omni.</span>
+                                <span>Tipper</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#docs">Docs</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="icon-moon"><img src="assets/Moon.svg" alt="Dark Mode"></span>
+                        <span class="icon-sun"><img src="assets/Sun.svg" alt="Light Mode"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero block">
+        <div class="container">
+            <h1>Use cases</h1>
+            <p class="section-subtitle">OmniTipper is the payment rail. Communities build rewards and incentives on top of tipping.</p>
+            <div class="fee-notice" style="margin-top: var(--spacing-lg);">
+                <strong>Important:</strong> OmniTipper doesn't force a single "airdrop engine." You decide the rules (games, quests, events, rewards) and distribute tips accordingly.
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Grid -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Airdrops / rain</h3>
+                    <p>Reward participation, attendance, or "first 50" actions by distributing tips based on your rules.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Games & quests</h3>
+                    <p>Pay out prizes for wins, streaks, tournaments, or leaderboard placement.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Contributor rewards</h3>
+                    <p>Run bounties, moderation stipends, hackathon prizes, and community initiatives.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Onboarding incentives</h3>
+                    <p>Reward users for completing onboarding steps, verification, or first contributions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Role-based perks</h3>
+                    <p>Reward particular roles, squads, or event channels with consistent payouts.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Automated payouts</h3>
+                    <p>Connect OmniTipper commands to your own bots/scripts to automate recurring rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Workflows -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Example workflows</h2>
+            <div class="steps" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div class="step">
+                    <h3>Game reward payout</h3>
+                    <p class="small" style="margin-bottom: 1rem;">After a match, your game bot posts a result and the admin triggers payouts:</p>
+                    <div class="code-block">
+                        <code>!tip @winner $10 USDC
+!tip @runnerup $5 USDC</code>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>Event "rain" reward</h3>
+                    <p class="small" style="margin-bottom: 1rem;">Reward attendees who react to a message (your rule engine decides who qualifies):</p>
+                    <div class="code-block">
+                        <code>!tip @alice 2.5 TOKEN
+!tip @bob 2.5 TOKEN
+!tip @charlie 2.5 TOKEN</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to build with OmniTipper?</h2>
+            <p>Add OmniTipper to your Discord server and start creating community rewards.</p>
+            <a href="get-on-server.html" class="btn btn-primary btn-large">
+                <img src="assets/discord-icon.svg" alt="Discord" class="btn-icon">
+                Add to Discord
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>OmniTipper</h4>
+                <p>Discord tipping on Base: instant off-chain tips, on-chain deposits + withdrawals when you're ready to move funds.</p>
+                <p class="small">Fees: tips are free. Deposits and withdrawals include a 0.1% service fee.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Docs</h4>
+                <ul>
+                    <li><a href="docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="docs/commands.html">Commands</a></li>
+                    <li><a href="docs/self-host.html">Self-Host</a></li>
+                    <li><a href="docs/architecture.html">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="commands.html">Commands</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-lg); width: 100%;">
+                <p>&copy; 2026 OmniTipper. Base-native Discord tipping.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

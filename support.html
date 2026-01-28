@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - OmniTipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-container">
+                            <img src="assets/tipper_bot_logo.svg" alt="OmniTipper" class="logo">
+                            <div class="logo-text">
+                                <span>Omni.</span>
+                                <span>Tipper</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#docs">Docs</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="icon-moon"><img src="assets/Moon.svg" alt="Dark Mode"></span>
+                        <span class="icon-sun"><img src="assets/Sun.svg" alt="Light Mode"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero block">
+        <div class="container">
+            <h1>Support & Community</h1>
+            <p class="section-subtitle">Need help? We're here for you. Choose how you'd like to reach us.</p>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="features">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;">
+                <div class="feature-card">
+                    <h3>📖 Documentation</h3>
+                    <p>Check out our comprehensive docs with guides, tutorials, and technical references.</p>
+                    <a href="docs/getting-started.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">Browse Docs</a>
+                </div>
+                <div class="feature-card">
+                    <h3>💬 Discord Community</h3>
+                    <p>Join our community Discord server for real-time support and to chat with other users.</p>
+                    <a href="#" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">Join Discord</a>
+                </div>
+                <div class="feature-card">
+                    <h3>📧 Email Support</h3>
+                    <p>Send us an email and we'll get back to you as soon as possible.</p>
+                    <a href="mailto:support@omnitipper.xyz" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Docs Quick Links -->
+    <section class="documentation">
+        <div class="container">
+            <h2>Quick Documentation Links</h2>
+            <div class="docs-grid">
+                <a href="docs/getting-started.html" class="doc-card">
+                    <h3>Getting Started</h3>
+                    <p>Installation, setup, and first steps with OmniTipper.</p>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="docs/commands.html" class="doc-card">
+                    <h3>Commands Reference</h3>
+                    <p>Full reference for user and admin commands.</p>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="docs/self-host.html" class="doc-card">
+                    <h3>Self-Host Guide</h3>
+                    <p>Deploy OmniTipper with Docker Compose and monitoring.</p>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="docs/architecture.html" class="doc-card">
+                    <h3>Architecture</h3>
+                    <p>Deep dive into system design and technical decisions.</p>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://omnitipper-7e2078.gitlab.io/README.html" target="_blank" class="doc-card">
+                    <h3>Official README</h3>
+                    <p>Full technical README from the source repository.</p>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>OmniTipper</h4>
+                <p>Discord tipping on Base: instant off-chain tips, on-chain deposits + withdrawals when you're ready to move funds.</p>
+                <p class="small">Fees: tips are free. Deposits and withdrawals include a 0.1% service fee.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Docs</h4>
+                <ul>
+                    <li><a href="docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="docs/commands.html">Commands</a></li>
+                    <li><a href="docs/self-host.html">Self-Host</a></li>
+                    <li><a href="docs/architecture.html">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="use-cases.html">Use Cases</a></li>
+                    <li><a href="commands.html">Commands</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-lg); width: 100%;">
+                <p>&copy; 2026 OmniTipper. Base-native Discord tipping.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

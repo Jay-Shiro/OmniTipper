@@ -11,36 +11,38 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="index.html" class="logo-link">
-                    <div class="logo-container">
-                        <img src="tipper_bot_logo.svg" alt="OmniTipper" class="logo">
-                        <div class="logo-text">
-                            <span>Omni.</span>
-                            <span>Tipper</span>
+                <div class="nav-left">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-container">
+                            <img src="assets/tipper_bot_logo.svg" alt="OmniTipper" class="logo">
+                            <div class="logo-text">
+                                <span>Omni.</span>
+                                <span>Tipper</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#docs">Documentation</a></li>
-                    <li><a href="guides.html">Guides & Contact</a></li>
-                </ul>
-                <div class="nav-theme-toggle">
-                    <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
-                        <span class="icon-moon"><img src="Moon.svg" alt="Dark Mode"></span>
-                        <span class="icon-sun"><img src="Sun.svg" alt="Light Mode"></span>
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#docs">Docs</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="icon-moon"><img src="assets/Moon.svg" alt="Dark Mode"></span>
+                        <span class="icon-sun"><img src="assets/Sun.svg" alt="Light Mode"></span>
                     </button>
                 </div>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                    <span class="icon-moon"><img src="Moon.svg" alt="Dark Mode"></span>
-                    <span class="icon-sun"><img src="Sun.svg" alt="Light Mode"></span>
-                </button>
             </div>
         </div>
     </nav>
@@ -49,28 +51,40 @@
     <section class="hero block">
         <div class="container">
             <div class="hero-content">
-                <h2>Discord Tipbot </h2>
-                <p>Send Crypto currencies to anyone on Discord .</p>
+                <h2>OmniTipper — Discord tipping on Base.</h2>
+                <p>Instant off-chain tips for everyday rewards, with on-chain deposits + withdrawals when you're ready to move funds.</p>
                 <div class="cta-buttons">
                     <a href="get-on-server.html" class="btn btn-primary">
-                        <img src="discord-icon.svg" alt="Discord" class="btn-icon">
-                        Get Started
+                        <img src="assets/discord-icon.svg" alt="Discord" class="btn-icon">
+                        Add to Discord
                     </a>
-                    <a href="#docs" class="btn btn-secondary">View Docs</a>
+                    <a href="docs/getting-started.html" class="btn btn-secondary">Read the Docs</a>
+                </div>
+                <ul class="hero-features">
+                    <li>Tip in token amounts or USD-equivalents (auto conversion)</li>
+                    <li>Unlimited ERC‑20 support — add tokens by contract address</li>
+                    <li>Withdraw to any Base address or ENS</li>
+                </ul>
+                <div class="fee-notice">
+                    <strong>Fees:</strong> Tips are free. Deposits and withdrawals include a <strong>0.1%</strong> service fee.
                 </div>
             </div>
             <div class="stats">
                 <div class="stat-item">
-                    <span class="stat-number">Multi-Token</span>
-                    <span class="stat-label">Support on Base</span>
+                    <span class="stat-number">Off-chain</span>
+                    <span class="stat-label">Instant tips & internal transfers</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">Zero Fees</span>
-                    <span class="stat-label">On Tips to friends</span>
+                    <span class="stat-number">On-chain</span>
+                    <span class="stat-label">Deposits + withdrawals on Base</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">Instant</span>
-                    <span class="stat-label">Deposit and withdrawals</span>
+                    <span class="stat-number">Unlimited</span>
+                    <span class="stat-label">ERC‑20s via contract address</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Ops-ready</span>
+                    <span class="stat-label">Metrics + dashboards + logs</span>
                 </div>
             </div>
         </div>
@@ -79,37 +93,32 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2>Why OmniTipper?</h2>
+            <h2>Why OmniTipper</h2>
+            <p class="section-subtitle">OmniTipper is designed for real communities: everyday tips, incentives, and automated rewards — with transparent fees and operator-grade observability.</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon"><img src="no_fees.svg" alt="No Fees" class="feature-icon-img"/></div>
-                    <h3>No Fees</h3>
-                    <p>Send tokens with zero transaction fees. Keep more value in your community.</p>
+                    <h3>Fast tips</h3>
+                    <p>Tips happen off-chain (database ledger) for instant transfers and a smooth Discord UX.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon"><img src="instant_transfers.svg" alt="Secure" class="feature-icon-img"/></div>
-                    <h3>Instant Transfers</h3>
-                    <p>Immediate delivery of tokens to community members, no waiting.</p>
+                    <h3>0.1% deposits + withdrawals</h3>
+                    <p>Clear service fee on deposit + withdraw. Tips remain free.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon"><img src="multi_token_support.svg" alt="Secure" class="feature-icon-img"/></div>
-                    <h3>Multi-Token Support</h3>
-                    <p>Support for multiple blockchain tokens and cryptocurrencies.</p>
+                    <h3>Unlimited tokens</h3>
+                    <p>Add any Base ERC‑20 token by contract address — perfect for communities and long-tail tokens.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon"><img src="community_engagement.svg" alt="Secure" class="feature-icon-img"/></div>
-                    <h3>Community Engagement</h3>
-                    <p>Create airdrops, rains, and token-powered activities for your Discord.</p>
+                    <h3>USD tipping</h3>
+                    <p>Tip "$5" (or other fiat values) and OmniTipper converts to the selected token amount.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon"><img src="secure.svg" alt="Secure" class="feature-icon-img"/></div>
-                    <h3>Secure</h3>
-                    <p>Built-in security features to protect your community's transactions.</p>
+                    <h3>ENS withdrawals</h3>
+                    <p>Withdraw using an address or a human-readable ENS name.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon"><img src="easy_to_use.svg" alt="Secure" class="feature-icon-img"/></div>
-                    <h3>Easy to Use</h3>
-                    <p>Simple commands and intuitive interface for all users.</p>
+                    <h3>Operator-ready</h3>
+                    <p>Self-host with Docker Compose plus a recommended monitoring stack (metrics, dashboards, logs).</p>
                 </div>
             </div>
         </div>
@@ -119,32 +128,35 @@
     <section id="how-it-works" class="how-it-works">
         <div class="container">
             <h2>How It Works</h2>
-            <div class="steps">
+           
                 <div class="step">
                     <div class="step-number">01</div>
-                    <h3>Invite the Bot</h3>
-                    <p>Add the bot by inviting the Omnitipper into the server</p>
+                    <h3>Deposit</h3>
+                    <p>Deposit tokens to your OmniTipper address on Base. Once confirmed, your balance updates.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">02</div>
-                    <h3>Request Deposit Address</h3>
-                    <p>Request for Deposit address in DM .</p>
+                    <h3>Tip</h3>
+                    <p>Tip users in Discord using token amounts or USD. Tips are instant and off-chain.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">03</div>
-                    <h3>Start Tipping</h3>
-                    <p>Use simple commands to start sending and receiving tips from friends and community members.</p>
+                    <h3>Withdraw</h3>
+                    <p>Withdraw to your own wallet on Base using an address or ENS name.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">04</div>
-                    <h3>Explore Functionalities</h3>
-                    <p>Explore the other functionality with !help command...</p>
+                    <h3>Automate</h3>
+                    <p>Connect OmniTipper to your own bots/scripts for automated recurring rewards.</p>
                 </div>
             </div>
             <div class="code-example">
-                <h3>Example Command</h3>
+                <h3>Quick Commands</h3>
                 <div class="code-block">
-                    <code>$tip @username @anotherfriend 100 OMNI</code>
+                    <code>!balances
+!deposit USDC
+!tip @alice $5 USDC
+!withdraw USDC alice.eth 25</code>
                 </div>
             </div>
         </div>
@@ -155,22 +167,29 @@
         <div class="container">
             <h2>Documentation</h2>
             <div class="docs-grid">
-                <a href="#" class="doc-card">
-                    <div class="doc-icon"><img src="readme.svg" alt="README" class="doc-icon-img"/></div>
-                    <h3>README</h3>
-                    <p>Get started with installation, setup, and usage instructions.</p>
+                <a href="docs/getting-started.html" class="doc-card">
+                    <h3>Getting Started</h3>
+                    <p>Installation, setup, and first steps with OmniTipper.</p>
                     <span class="arrow">→</span>
                 </a>
-                <a href="#" class="doc-card">
-                    <div class="doc-icon"><img src="architecture.svg" alt="Architecture" class="doc-icon-img"/></div>
+                <a href="docs/commands.html" class="doc-card">
+                    <h3>Commands</h3>
+                    <p>Full reference for user and admin commands.</p>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="docs/architecture.html" class="doc-card">
                     <h3>Architecture</h3>
-                    <p>Deep dive into system architecture and design decisions.</p>
+                    <p>Deep dive into system design and technical decisions.</p>
                     <span class="arrow">→</span>
                 </a>
-                <a href="#" class="doc-card">
-                    <div class="doc-icon"><img src="secure_audit.svg" alt="Security Audit" class="doc-icon-img"/></div>
-                    <h3>Security Audit</h3>
-                    <p>Security findings and best practices for safe operations.</p>
+                <a href="docs/self-host.html" class="doc-card">
+                    <h3>Self-Host</h3>
+                    <p>Deploy OmniTipper with Docker Compose and monitoring.</p>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://omnitipper-7e2078.gitlab.io/README.html" target="_blank" class="doc-card">
+                    <h3>Official README</h3>
+                    <p>Full technical README from the source repository.</p>
                     <span class="arrow">→</span>
                 </a>
             </div>
@@ -180,44 +199,45 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Engage Your Community?</h2>
-            <p>Add OmniTipper to your Discord server today and start tipping.</p>
+            <h2>Ready to tip your community?</h2>
+            <p>Add OmniTipper to your Discord server today and start rewarding.</p>
             <a href="get-on-server.html" class="btn btn-primary btn-large">
-                <img src="discord-icon.svg" alt="Discord" class="btn-icon">
-                Invite OmniTipper
+                <img src="assets/discord-icon.svg" alt="Discord" class="btn-icon">
+                Add to Discord
             </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>OmniTipper</h4>
-                    <p>Part of the Omniacs ecosystem. Building tools for web3 communities.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Discord</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Community</h4>
-                    <ul>
-                        <li><a href="#">Twitter / X</a></li>
-                        <li><a href="#">Telegram</a></li>
-                        <li><a href="#">Discord Server</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>OmniTipper</h4>
+                <p>Discord tipping on Base: instant off-chain tips, on-chain deposits + withdrawals when you're ready to move funds.</p>
+                <p class="small">Fees: tips are free. Deposits and withdrawals include a 0.1% service fee.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OmniTipper. Part of the Omniacs DAO ecosystem.</p>
+            <div class="footer-section">
+                <h4>Docs</h4>
+                <ul>
+                    <li><a href="docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="docs/commands.html">Commands</a></li>
+                    <li><a href="docs/self-host.html">Self-Host</a></li>
+                    <li><a href="docs/architecture.html">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="https://omnitipper-7e2078.gitlab.io/README.html" target="_blank" rel="noreferrer">Official README</a></li>
+                    <li><a href="https://omnitipper-7e2078.gitlab.io/ARCHITECTURE.html" target="_blank" rel="noreferrer">Architecture (source)</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="use-cases.html">Use Cases</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-lg); width: 100%;">
+                <p>&copy; 2026 OmniTipper. Base-native Discord tipping.</p>
                 <ul class="footer-links">
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>

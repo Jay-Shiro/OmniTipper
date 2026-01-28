@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - OmniTipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-container">
+                            <img src="assets/tipper_bot_logo.svg" alt="OmniTipper" class="logo">
+                            <div class="logo-text">
+                                <span>Omni.</span>
+                                <span>Tipper</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#docs">Docs</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="icon-moon"><img src="assets/Moon.svg" alt="Dark Mode"></span>
+                        <span class="icon-sun"><img src="assets/Sun.svg" alt="Light Mode"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero block">
+        <div class="container">
+            <h1>Features</h1>
+            <p class="section-subtitle">Everything you need for fast Discord tipping — plus the operator tooling to run it reliably.</p>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Tipping</h3>
+                    <p>Tip users in token amounts or USD-equivalents with instant off-chain balance updates.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Wallet</h3>
+                    <p>Deposit on Base, track balances, and withdraw to any address or ENS.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Unlimited ERC‑20s</h3>
+                    <p>Operators can add any Base ERC‑20 by contract address — great for community tokens.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Transparent fees</h3>
+                    <p>Tips are free. Deposits and withdrawals include a 0.1% service fee.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Monitoring</h3>
+                    <p>Recommended deployment includes metrics, dashboards, and log aggregation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Admin controls</h3>
+                    <p>Accounting, refunds, failed withdrawal triage, and safety controls for operators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communities & Operators -->
+    <section class="features" style="margin-top: 4rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div class="feature-card">
+                    <h2 style="margin-bottom: 1rem; margin-top: 0;">Built for communities</h2>
+                    <p>Use OmniTipper as the payment rail for airdrops/rains, game rewards, quests, and contributor incentives. You define the rules — OmniTipper handles balances and payouts.</p>
+                    <a href="use-cases.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">See use cases</a>
+                </div>
+                <div class="feature-card">
+                    <h2 style="margin-bottom: 1rem; margin-top: 0;">Built for operators</h2>
+                    <p>Self-host with Docker Compose, configure via environment variables, and observe the system via the built-in monitoring stack.</p>
+                    <a href="docs/self-host.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">Self-host guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>OmniTipper</h4>
+                <p>Discord tipping on Base: instant off-chain tips, on-chain deposits + withdrawals when you're ready to move funds.</p>
+                <p class="small">Fees: tips are free. Deposits and withdrawals include a 0.1% service fee.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Docs</h4>
+                <ul>
+                    <li><a href="docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="docs/commands.html">Commands</a></li>
+                    <li><a href="docs/self-host.html">Self-Host</a></li>
+                    <li><a href="docs/architecture.html">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="use-cases.html">Use Cases</a></li>
+                    <li><a href="commands.html">Commands</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-lg); width: 100%;">
+                <p>&copy; 2026 OmniTipper. Base-native Discord tipping.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
