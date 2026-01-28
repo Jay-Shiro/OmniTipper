@@ -619,7 +619,6 @@ body:not(.light-mode) .code-block {
    =================================== */
 .documentation {
     padding: var(--spacing-2xl) 0;
-    border-bottom: 1px solid var(--color-border);
 }
 
 .documentation h2 {
@@ -698,9 +697,22 @@ body:not(.light-mode) .code-block {
    CTA SECTION
    =================================== */
 .cta-section {
-    padding: var(--spacing-2xl) 0;
-    border-bottom: 1px solid var(--border-color);
+    padding: 0;
     text-align: center;
+}
+
+.cta-section .container {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-2xl);
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+body.light-mode .cta-section .container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .cta-section h2 {
@@ -725,9 +737,9 @@ body:not(.light-mode) .code-block {
 }
 
 .footer-content {
-    background-color: #d4d4d4;
+    background-color: #908f8f;
     border-top: 1px solid var(--border-color);
-    padding: var(--spacing-2xl) var(--spacing-lg);
+    padding: 0 var(--spacing-2xl);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-1xl);
@@ -740,8 +752,13 @@ body.light-mode .footer-content {
     background-color: #272b2f;
 }
 
+.footer-section {
+    align-content: center;
+    padding: var(--spacing-2xl) var(--spacing-2xl);
+}
+
 .footer-section h4 {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
     font-weight: 600;
     margin-bottom: var(--spacing-md);
     text-transform: uppercase;
@@ -755,7 +772,7 @@ body.light-mode .footer-section h4 {
 
 .footer-section p {
     color: #333333;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     line-height: var(--line-height-normal);
 }
 
@@ -769,17 +786,16 @@ body.light-mode .footer-section p {
 
 .footer-section ul li {
     margin-bottom: var(--spacing-sm);
-    color: #333333;
 }
 
 body.light-mode .footer-section ul li {
-    color: #cccccc;
+    margin-bottom: var(--spacing-sm);
 }
 
 .footer-section a {
     color: #333333;
     text-decoration: none;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     transition: color var(--transition-quick);
 }
 
